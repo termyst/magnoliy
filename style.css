@@ -122,6 +122,30 @@ h6 {
 	max-width: 1200px;
 }
 
+.slick-prev {
+	position: absolute;
+	right: 10px;
+	bottom: 100px;
+	z-index: 1000;
+	padding: 10px 15px;
+	background-color: #000;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+.slick-next {
+	position: absolute;
+	left: 10px;
+	bottom: 100px;
+	z-index: 1000;
+	padding: 10px 15px;
+	background-color: #000;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
 
 .slick-dots {
 	position: absolute;

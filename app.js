@@ -7,6 +7,6 @@ slider.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    arrows: false,
-    dots: true
+    arrows: true,
+    dots: false
 });

@@ -208,6 +208,14 @@ h6 {
 
 	.footer__title {
 	font-size: 20px
-}
+	}
+
+	.slick-next {
+		bottom: 10px;
+	}
+
+	.slick-prev {
+		bottom: 10px;
+	}
 }
 

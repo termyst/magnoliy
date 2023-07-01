@@ -33,13 +33,16 @@ h6 {
 	margin: 0 auto;
 }
 
-.nav {
-	display: flex;
-	flex-direction: column;
+.nav__inner {
 	position: fixed;
 	right: 15px;
 	top: 25%;
 	z-index: 1100;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
 }
 
 .nav__link {

@@ -15,6 +15,37 @@ $(document).ready(function () {
 });
 
 
+// Изчезающие кнопки при скроле до низу
+
+$(function () {
+    $.fn.fadeElements = function(a){
+        $(this).hover(function(){
+            $(this).stop(true,true).fadeTo(a.inTime,a.inOpacity);
+        },function(){
+            $(this).stop(true,true).delay(a.delayTime).fadeTo(a.outTime,a.outOpacity);
+        });
+    };
+    $('#ubar').fadeElements({
+        inOpacity:1,
+        outOpacity:1,
+        inTime:200,
+        outTime:200,
+        delayTime:1000
+    });
+    /* -- */
+    var currentScrollTop = 0;
+    var dH = parseInt($(document).height() - $(window).height(),10);
+    $(window).scroll(function(e){
+        currentScrollTop = $(window).scrollTop();
+        if(dH <= currentScrollTop){
+            $('#ubar').fadeOut(1000);
+        } else {
+            $('#ubar').fadeIn(1000);
+        }
+    });
+});
+
+
 //ServicesSlider
 
 let slider = $("#slider");
